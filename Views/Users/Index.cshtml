@@ -1,0 +1,8 @@
+@model IEnumerable<MyFirstProject.Models.User>
+
+<h1>Users List</h1>
+<ul>
+    @foreach (var user in Model) {
+        <li>@user.Username (@user.Email)</li>
+    }
+</ul>
